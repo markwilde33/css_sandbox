@@ -27,6 +27,50 @@
           display: block;
         }
       }
+
+      /* Tablets */
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background-color: blue;
+        }
+
+        #tablet h1 {
+          display: block;
+        }
+      }
+
+      /* Normal */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background-color: green;
+        }
+
+        #normal h1 {
+          display: block;
+        }
+      }
+
+      /* Widescreen */
+      @media (min-width: 1201px) {
+        body {
+          background-color: orangered;
+        }
+
+        #widescreen h1 {
+          display: block;
+        }
+      }
+
+      /* Landscape */
+      @media (max-height: 500px) {
+        body {
+          background-color: brown;
+        }
+
+        #landscape h1 {
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
