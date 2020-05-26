@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Basics</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .flex-container .row {
+        background: lightseagreen;
+        height: 40vh;
+        display: flex;
+        /* Cross axis align */
+        flex-direction: row;
+        /* align-items: flex-start; */
+        align-items: center;
+        /* align-items: end; */
+      }
+      .flex-container .column {
+        background: #20b22c;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        /* Main axis align */
+        justify-content: center;
+        /* align-items: end; */
+      }
+      .item {
+        background: #db6060;
+        color: bisque;
+        border: #ccc solid 2px;
+        margin: 30px;
+        padding: 30px;
+        text-align: center;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        flex: 1 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="row">
+        <div class="item item-1">
+          <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+          <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+          <h3>Item 3</h3>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container column">
+      <div class="column">
+        <div class="item item-1">
+          <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+          <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+          <h3>Item 3</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
