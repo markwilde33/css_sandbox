@@ -11,10 +11,10 @@
         background-color: #ddd;
       }
 
-      /* if p is right after div */
+      /* if p is right after div, not a child inside div, rather a sibling outside div*/
       div + p {
         background: #333;
-        color: #fff;
+        color: rgb(223, 145, 28);
       }
 
       /* if p is preceded by a ul with same parent */
@@ -23,21 +23,29 @@
         color: #fff;
       }
 
-      /* Target attribute */
+      /* Target attribute of an element */
       a[target] {
-        background: #ddd;
+        background: rgb(197, 63, 168);
       }
 
       /* Target specific attribute value */
       input[type='text'],
       input[type='email'] {
-        width: 100%;
+        width: 80%;
+        margin: 5px;
+        background-color: aliceblue;
+      }
+
+      input[type='submit'] {
+        width: 20%;
+        margin: 5px;
+        background-color: rgb(55, 185, 168);
       }
     </style>
   </head>
   <body>
     <div>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit ameto boo yah.</p>
 
       <ul>
         <li>Item 1</li>
@@ -45,10 +53,10 @@
         <li>Item 3</li>
       </ul>
 
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet .</p>
     </div>
 
-    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet sibling of div p element.</p>
 
     <a href="#">Page 1</a> <a href="#">Page 2</a>
     <a href="http://google.com" target="_blank">Google</a>
