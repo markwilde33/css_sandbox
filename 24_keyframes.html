@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+      body {
+        background: #333;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .box-1 {
+        flex-direction: column;
+        display: inline-block;
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: animate1;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out; */
+        animation: animate1 5s forwards 1s ease-out;
+      }
+
+      .box-2 {
+        display: inline-block;
+        background: brown;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: animate1;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out; */
+        animation: animate1 5s forwards 1s ease-out;
+      }
+
+      @keyframes animate1 {
+        from {
+          top: 0;
+        }
+        to {
+          width: 600px;
+          background-color: rgb(87, 87, 255);
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </div>
+  </body>
+</html>
